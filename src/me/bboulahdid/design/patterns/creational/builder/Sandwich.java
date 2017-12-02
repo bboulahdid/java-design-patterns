@@ -14,6 +14,16 @@ package me.bboulahdid.design.patterns.creational.builder;
  * - Calls appropriate constructor
  * - Negates the need for exposed setters
  * 
+ * Pitfalls :
+ * - Immutable
+ * - Inner static class
+ * - Designed first
+ * - Complexity
+ * 
+ * Contrast :
+ * - Builder : Handles complex constructors, no interface required, can be a separate class, works with legacy code
+ * - Prototype : Implemented around a clone, avoids calling complex constructors, difficult to implement in legacy code
+ * 
  */
 public class Sandwich {
 	
